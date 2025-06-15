@@ -54,6 +54,8 @@ This notebook is designed to prepare and clean datasets before uploading them to
     ![Dashboard2](images/Customer_Insight.png)
 
      
-
+## Dataset Source
+Online sales dataset : https://www.kaggle.com/datasets/samruddhi4040/online-sales-data
+Curency conversion rate : https://www.kaggle.com/datasets/meetnagadia/us-dollar-inr-rupee-dataset20032021
 
 
