@@ -5,23 +5,23 @@ This notebook is designed to prepare and clean datasets before uploading them to
 
 ## Project Overview
 
-- Prepare dataset from Kaggle 
-- Cleansing and transform data with Python, Pandas
-- Export to parquet file
+- Source dataset from Kaggle 
+- Clean and transform data using Python and Pandas
+- Export cleaned data to a Parquet file
 - Upload dataset to Google BigQuery
-- Use SQL change data type of date for integer to date
-- Connect to Looker Studio for create dashboard
+- Convert order_date from integer to date format using SQL
+- Connect to Looker Studio to build interactive dashboards
 
 ---
 
 ## How to Use
 
- 1. Download the code in notebook file or download raw data in data file 
-        - If you use python code, Create Colab secret and config Kaggle API for download dataset
-        - You can get Kaggle API on your Kaggle Profile.
+ 1. Download the notebook or raw dataset 
+        - if using the notebook, configure Kaggle API and set up Colab secret to download dataset
+        - You can obtain your Kaggle API key from your Kaggle profile.
  
- 2. Upload parquet file to Google BigQuery by UI
-        - Change column order date data type integer to date, Use below SQL command.
+ 2. Upload parquet file to Google BigQuery via BigQuery UI
+        - After upload, use the following SQL to convert the order_date column from integer to date formate
 
             ```
             CREATE TABLE `your_project.data_set.table` AS
@@ -42,7 +42,9 @@ This notebook is designed to prepare and clean datasets before uploading them to
             FROM `your_project.data_set.table`
 
             ```
-3. Open Looker Studio, connect data in BigQuery and create dashboard
+3. Open Looker Studio
+        - Connect your BigQuery dataset
+        - Build and customize your dashboard
 
 ---
 
