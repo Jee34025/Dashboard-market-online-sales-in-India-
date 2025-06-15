@@ -17,34 +17,34 @@ This notebook is designed to prepare and clean datasets before uploading them to
 ## How to Use
 
  1. Download the notebook or raw dataset 
-        - if using the notebook, configure Kaggle API and set up Colab secret to download dataset
-        - You can obtain your Kaggle API key from your Kaggle profile.
+    - if using the notebook, configure Kaggle API and set up Colab secret to download dataset
+    - You can obtain your Kaggle API key from your Kaggle profile.
  
  2. Upload parquet file to Google BigQuery via BigQuery UI
-        - After upload, use the following SQL to convert the order_date column from integer to date formate
+    - After upload, use the following SQL to convert the order_date column from integer to date formate
 
-            ```
-            CREATE TABLE `your_project.data_set.table` AS
-            SELECT
-                order_id,
-                DATE(TIMESTAMP_MICROS(CAST(order_date / 1000 AS INT64))) AS order_date,
-                usd_amount,
-                usd_profit,
-                quantity,
-                total_amount,
-                total_profit,
-                category,
-                sub_category,
-                paymentmode,
-                customername,
-                state,
-                city
-            FROM `your_project.data_set.table`
+        ```
+        CREATE TABLE `your_project.data_set.table` AS
+        SELECT
+            order_id,
+            DATE(TIMESTAMP_MICROS(CAST(order_date / 1000 AS INT64))) AS order_date,
+            usd_amount,
+            usd_profit,
+            quantity,
+            total_amount,
+            total_profit,
+            category,
+            sub_category,
+            paymentmode,
+            customername,
+            state,
+            city
+        FROM `your_project.data_set.table`
 
             ```
 3. Open Looker Studio
-        - Connect your BigQuery dataset
-        - Build and customize your dashboard
+    - Connect your BigQuery dataset
+    - Build and customize your dashboard
 
 ---
 
@@ -56,6 +56,7 @@ This notebook is designed to prepare and clean datasets before uploading them to
      
 ## Dataset Source
 Online sales dataset : https://www.kaggle.com/datasets/samruddhi4040/online-sales-data
+
 Curency conversion rate : https://www.kaggle.com/datasets/meetnagadia/us-dollar-inr-rupee-dataset20032021
 
 
