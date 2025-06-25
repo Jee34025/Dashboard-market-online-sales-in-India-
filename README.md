@@ -49,9 +49,9 @@ This notebook is designed to prepare and clean datasets before uploading them to
 ---
 
 ## Result dashboard
-    ![Dashboard1](images/sales_performance.png)
+   ![Dashboard1](images/sales_performance.png)
     
-    ![Dashboard2](images/Customer_Insight.png)
+   ![Dashboard2](images/Customer_Insight.png)
 
      
 ## Dataset Source
