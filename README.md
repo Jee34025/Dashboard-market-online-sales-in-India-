@@ -1,5 +1,5 @@
 # Market online sales dashbord
-This notebook is designed to prepare and clean datasets before uploading them to Google BigQuery, making them ready for further analysis and dashboard creation in Looker Studio (formerly known as Data Studio).
+This notebook is designed to prepare and clean datasets before uploading them to Google BigQuery, making them ready for further analysis and dashboard creation in Looker Studio (formerly known as Data Studio) and Power BI.
 
 ---
 
@@ -10,7 +10,7 @@ This notebook is designed to prepare and clean datasets before uploading them to
 - Export cleaned data to a Parquet file
 - Upload dataset to Google BigQuery
 - Convert order_date from integer to date format using SQL
-- Connect to Looker Studio to build interactive dashboards
+- Connect to Looker Studio or Power BI to build interactive dashboards
 
 ---
 
@@ -42,18 +42,32 @@ This notebook is designed to prepare and clean datasets before uploading them to
         FROM `your_project.data_set.table`
 
             ```
-3. Open Looker Studio
+3. Open Looker Studio or Power BI
     - Connect your BigQuery dataset
     - Build and customize your dashboard
 
 ---
 
 ## Result dashboard
-   ![Dashboard1](images/sales_performance.png)
-    
-   ![Dashboard2](images/Customer_Insight.png)
 
+Looker Studio Dashboard
+
+![Looker Dashboard1](images/sales_performance.png)
+    
+![Looker Dashboard2](images/Customer_Insight.png)
+
+
+Power BI Dashboard
+
+![BI Dashboard1](images/sales_performance_PowerBI_1.png)
+
+![BI Dashboard2](images/sales_performance_PowerBI_2.png)
+
+![BI Dashboard3](images/Customer_Insight_PBI_1.png)
+
+![BI Dashboard4](images/Customer_Insight_PBI_2.png)
      
+
 ## Dataset Source
 Online sales dataset : https://www.kaggle.com/datasets/samruddhi4040/online-sales-data
 
